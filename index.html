@@ -14,10 +14,6 @@
     <!-- Scroll Progress -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
-    <!-- Custom Cursor -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-follower" id="cursorFollower"></div>
-
     <!-- Background Animation -->
     <div class="bg-animation">
         <div class="floating-shapes">
@@ -188,7 +184,7 @@
                     <h3 class="skill-title">Languages</h3>
                     <ul class="skill-list">
                         <li>English - Fluent</li>
-                        <li>Serbian - Native</li>
+                        <li>Montenegrin – Native</li>
                         <li>German - Basic</li>
                         <li>Mathematical - Expert</li>
                         <li>Code - Passionate</li>
@@ -643,42 +639,7 @@
             background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
             color: white;
             overflow-x: hidden;
-        }
-
-        /* Custom Cursor - Hide on mobile */
-        .cursor {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            transition: transform 0.1s ease;
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .cursor-follower {
-            position: fixed;
-            width: 40px;
-            height: 40px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9998;
-            transition: all 0.3s ease;
-        }
-
-        /* Hide cursor on mobile/touch devices */
-        @media (hover: none) and (pointer: coarse) {
-            .cursor, .cursor-follower {
-                display: none !important;
-            }
-            
-            body {
-                cursor: auto !important;
-            }
+            cursor: auto;
         }
 
         /* Background Animation */
